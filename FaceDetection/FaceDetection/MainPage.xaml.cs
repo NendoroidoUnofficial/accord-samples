@@ -8,7 +8,7 @@ namespace FaceDetection
     using System.Drawing.Imaging;
     using System.IO;
     using System.Reflection;
-
+    using Accord.Imaging;
     using Accord.Imaging.Filters;
     using Accord.Vision.Detection;
 
@@ -22,7 +22,7 @@ namespace FaceDetection
         #region FIELDS
 
         private Stream imageSourceStream;
-        private readonly Bitmap bitmap;
+        private Bitmap bitmap;
         private readonly HaarObjectDetector detector;
 
         #endregion
@@ -62,6 +62,38 @@ namespace FaceDetection
                 this.detector = new HaarObjectDetector(cascade, 30);
             }
         }
+
+        #region SURL
+        private async void MainPage_OnLoaded()
+        {
+            var assembly = Assembly_.GetExecutingAssembly();
+            using (var stream = assembly.GetManifestResourceStream("FaceDetection.Images.judybats.jpg"))
+            {
+                this.ImageView.Source = this.GetImageSourceFromStream(stream);
+
+                stream.Seek(0, SeekOrigin.Begin);
+                this.bitmap = ((Bitmap)Image.FromStream(stream)).Clone(PixelFormat.Format32bppArgb);
+            }
+        }
+
+        private void DetectButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            var threshold = 10;// (float)Math.Pow(10.0, this.LogThresholdSlider.Value);
+            var octaves = 10;// (int)this.OctaveSlider.Value;
+            var initial = 10;// (int)this.InitialSlider.Value;
+
+            // Create a new SURF Features Detector using the given parameters
+            var surf = new SpeededUpRobustFeaturesDetector(threshold, octaves, initial);
+
+            var points = surf.ProcessImage(this.bitmap);
+
+            // Create a new AForge's Corner Marker Filter
+            var features = new FeaturesMarker(points);
+
+            // Apply the filter and display it on a picturebox
+            this.LenaImage.Source = (BitmapSource)features.Apply(bitmap);
+        }
+        #endregion
 
         #endregion
 
