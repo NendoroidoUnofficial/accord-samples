@@ -63,7 +63,12 @@ namespace FaceDetection
             }
         }
 
+        #endregion
+
         #region SURL
+
+
+        /*
         private async void MainPage_OnLoaded()
         {
             var assembly = Assembly_.GetExecutingAssembly();
@@ -76,7 +81,7 @@ namespace FaceDetection
             }
         }
 
-        private void DetectButton_OnClick(object sender, RoutedEventArgs e)
+        private void DetectButton_OnClick(object sender, EventArgs e)
         {
             var threshold = 10;// (float)Math.Pow(10.0, this.LogThresholdSlider.Value);
             var octaves = 10;// (int)this.OctaveSlider.Value;
@@ -93,7 +98,7 @@ namespace FaceDetection
             // Apply the filter and display it on a picturebox
             this.LenaImage.Source = (BitmapSource)features.Apply(bitmap);
         }
-        #endregion
+        */
 
         #endregion
 
