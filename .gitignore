@@ -214,3 +214,7 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 *.DotSettings
+.vs/accord-samples/v15/Server/sqlite3/storage.ide
+.vs/accord-samples/v15/Server/sqlite3/storage.ide-shm
+.vs/accord-samples/v15/Server/sqlite3/db.lock
+.vs/accord-samples/v15/Server/sqlite3/storage.ide-wal
