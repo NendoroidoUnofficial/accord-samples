@@ -26,7 +26,7 @@ namespace FaceDetection.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new FaceDetection.App());
 
             return base.FinishedLaunching(app, options);
         }

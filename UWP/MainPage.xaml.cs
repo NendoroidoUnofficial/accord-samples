@@ -21,7 +21,7 @@ namespace Nendoroid.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Form.App());
+            LoadApplication(new FaceDetection.App());
         }
     }
 }
