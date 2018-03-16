@@ -105,7 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Form\FaceDetection.Core.csproj">
-      <Name>FaceDetection.Core</Name>
+      <Name>Form</Name>
       <Project>{5C057934-125B-4143-BD88-820C0884066D}</Project>
     </ProjectReference>
   </ItemGroup>

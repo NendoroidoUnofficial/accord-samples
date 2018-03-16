@@ -1,12 +1,7 @@
 ﻿<Properties StartupConfiguration="{E0E1A233-F816-4B67-9FA2-130550049F17}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FaceDetection/FaceDetection.iOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="packages/Xamarin.Forms.2.3.0.49/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets">
     <Files>
-      <File FileName="FaceDetection/FaceDetection/MainPage.xaml.cs" Line="101" Column="9" />
-      <File FileName="FaceDetection/FaceDetection/MainPage.xaml" Line="30" Column="15" />
-      <File FileName="packages/Xamarin.Forms.2.3.0.49/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets" Line="62" Column="13" />
-      <File FileName="packages/Xamarin.Forms.2.5.0.280555/build/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.targets" Line="54" Column="4" />
-      <File FileName="../../../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.8.0.20/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="1319" Column="3" />
-      <File FileName="FaceDetection/FaceDetection.iOS/Info.plist" />
+      <File FileName="packages/Xamarin.Forms.2.3.0.49/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.targets" Line="17" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
@@ -17,4 +12,6 @@
   <MonoDevelop.Ide.ItemProperties.FaceDetection.FaceDetection.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FCE6F4D5-4814-46C5-89F8-10997D810412" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.FaceDetection.FaceDetection.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.FaceDetection.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FCE6F4D5-4814-46C5-89F8-10997D810412" />
+  <MonoDevelop.Ide.ItemProperties.FaceDetection.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>
