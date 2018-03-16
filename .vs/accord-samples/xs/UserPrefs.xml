@@ -10,8 +10,8 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.FaceDetection.FaceDetection.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FCE6F4D5-4814-46C5-89F8-10997D810412" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.FaceDetection.FaceDetection.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.FaceDetection.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FCE6F4D5-4814-46C5-89F8-10997D810412" />
-  <MonoDevelop.Ide.ItemProperties.FaceDetection.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FCE6F4D5-4814-46C5-89F8-10997D810412" />
 </Properties>
