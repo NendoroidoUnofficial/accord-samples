@@ -167,7 +167,7 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FaceDetection\FaceDetection\FaceDetection.Core.csproj">
+    <ProjectReference Include="..\Form\FaceDetection.Core.csproj">
       <Project>{5c057934-125b-4143-bd88-820c0884066d}</Project>
       <Name>FaceDetection.Core</Name>
     </ProjectReference>
