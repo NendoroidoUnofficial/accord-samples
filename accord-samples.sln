@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Core", "FaceDetection\FaceDetection\FaceDetection.Core.csproj", "{5C057934-125B-4143-BD88-820C0884066D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Core", "Form\FaceDetection.Core.csproj", "{5C057934-125B-4143-BD88-820C0884066D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.iOS", "FaceDetection\FaceDetection.iOS\FaceDetection.iOS.csproj", "{E0E1A233-F816-4B67-9FA2-130550049F17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.iOS", "iOS\FaceDetection.iOS.csproj", "{E0E1A233-F816-4B67-9FA2-130550049F17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Droid", "FaceDetection\FaceDetection.Droid\FaceDetection.Droid.csproj", "{59314DA1-2B4B-4354-95D3-A65F2887C991}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Droid", "Droid\FaceDetection.Droid.csproj", "{59314DA1-2B4B-4354-95D3-A65F2887C991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.WinPhone81", "FaceDetection\FaceDetection.WinPhone81\FaceDetection.WinPhone81.csproj", "{1F4338E5-066F-44E4-8158-9E7A6E92601E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.WinPhone81", "WinPhone81\FaceDetection.WinPhone81.csproj", "{1F4338E5-066F-44E4-8158-9E7A6E92601E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Windows", "FaceDetection\FaceDetection.Windows\FaceDetection.Windows.csproj", "{24EFCA97-D793-4973-99BB-F2510C361B06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Windows", "Windows\FaceDetection.Windows.csproj", "{24EFCA97-D793-4973-99BB-F2510C361B06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWP", "UWP\UWP.csproj", "{D48995D0-C9E3-43FF-AFEC-DE70B3A722B8}"
 EndProject
