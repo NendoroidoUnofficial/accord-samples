@@ -38,8 +38,59 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Domain\Setting\Language\Language.cs" />
+    <Compile Include="Domain\Setting\SearchEngine\SearchEngineType.cs" />
+    <Compile Include="Helps\EmguCVImageHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Search\Capture\SearchSubmitModel.cs" />
+    <Compile Include="Model\Search\Main\SearchCategoryAccessoryModel.cs" />
+    <Compile Include="Model\Search\Result\SearchResultModel.cs" />
+    <Compile Include="Model\Setting\MainPage\NowLanguageModel.cs" />
+    <Compile Include="Model\Setting\MainPage\TitleAndContextModel.cs" />
+    <Compile Include="Model\Setting\SearchEngine\SearchEngineSelectionModel.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Capture\CameraPage.xaml.cs">
+      <DependentUpon>CameraPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Instructions\TakePhotoInstructions.xaml.cs">
+      <DependentUpon>TakePhotoInstructions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Main\Cell\AccessoryTypeCell.xaml.cs">
+      <DependentUpon>AccessoryTypeCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Main\MainSearchPage.xaml.cs">
+      <DependentUpon>MainSearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Profile\AccessoryPage.xaml.cs">
+      <DependentUpon>AccessoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Profile\SearchResultPage.xaml.cs">
+      <DependentUpon>SearchResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Result\Cell\DetailViewCell.xaml.cs">
+      <DependentUpon>DetailViewCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search\Result\MatchListPage.xaml.cs">
+      <DependentUpon>MatchListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\Author\AboutAuthor.xaml.cs">
+      <DependentUpon>AboutAuthor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\ChangeLog\ChangeLogPage.xaml.cs">
+      <DependentUpon>ChangeLogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\Language\ChangeLanguagePage.xaml.cs">
+      <DependentUpon>ChangeLanguagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\SearchEngine\SelectSearchEngine.xaml.cs">
+      <DependentUpon>SelectSearchEngine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\SettingPage.xaml.cs">
+      <DependentUpon>SettingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +119,12 @@
       <HintPath>..\packages\portable.accord.vision.3.1.0-pre\lib\portable-net45+netcore45+wpa81\Accord.Vision.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Plugin.Media, Version=3.1.3.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.Media.3.1.3.222-beta\lib\netstandard1.0\Plugin.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media.Abstractions, Version=3.1.3.222, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.Media.3.1.3.222-beta\lib\netstandard1.0\Plugin.Media.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Shim, Version=2.1.0.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
       <HintPath>..\packages\shim.2.1.0-pre\lib\portable-net45+netcore45+wpa81\Shim.dll</HintPath>
       <Private>True</Private>
@@ -91,8 +148,64 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Capture\CameraPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Instructions\TakePhotoInstructions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Main\Cell\AccessoryTypeCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Main\MainSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Profile\AccessoryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Profile\SearchResultPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Result\Cell\DetailViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Search\Result\MatchListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Setting\Author\AboutAuthor.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Setting\ChangeLog\ChangeLogPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Setting\Language\ChangeLanguagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Setting\SearchEngine\SelectSearchEngine.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Setting\SettingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +213,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Files\haarcascade_frontalface_alt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nendoroido.Core\Nendoroido.Core.csproj">
+      <Project>{71da8c93-439b-4a0b-a23c-0c36ceddb282}</Project>
+      <Name>Nendoroido.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
