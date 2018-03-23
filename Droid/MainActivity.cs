@@ -1,6 +1,8 @@
 ﻿// Copyright (c) 2015 Anders Gustafsson, Cureos AB.
 // All rights reserved.
 
+using Form;
+
 namespace FaceDetection.Droid
 {
     using Android.App;

@@ -1,10 +1,10 @@
 ﻿// Copyright (c) 2015 Anders Gustafsson, Cureos AB.
 // All rights reserved.
 
-namespace FaceDetection.iOS
-{
-    using UIKit;
+using UIKit;
 
+namespace Nendoroido.iOS
+{
     public class Application
     {
         // This is the main entry point of the application.

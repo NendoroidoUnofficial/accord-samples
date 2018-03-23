@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace test10.Class.Book
+namespace Nendoroido.Core.Domain.Book
 {
     //要標記是可以序列化的
     [Serializable]

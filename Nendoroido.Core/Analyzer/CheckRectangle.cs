@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
-namespace test10.Class.FindMatch
+namespace Nendoroido.Core.Analyzer
 {
     //用來檢查是不是正方形
     class CheckRectangle

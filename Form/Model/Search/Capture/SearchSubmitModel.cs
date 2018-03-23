@@ -1,4 +1,4 @@
-﻿using NendoroidAccessorySearchEngine.Core.Model;
+﻿using Nendoroido.Core.Model;
 
 namespace Form.Model.Search.Capture
 {

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("FaceDetection.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Nendoroido.Droid.Resource", IsApplication=true)]
 
-namespace FaceDetection.Droid
+namespace Nendoroido.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace FaceDetection.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::FaceDetection.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Nendoroido.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

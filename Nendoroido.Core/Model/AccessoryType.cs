@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NendoroidAccessorySearchEngine.Core.Model
+﻿namespace Nendoroido.Core.Model
 {
     /// <summary>
     /// accessory type

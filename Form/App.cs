@@ -1,10 +1,10 @@
 ﻿// Copyright (c) 2015 Anders Gustafsson, Cureos AB.
 // All rights reserved.
 
-namespace FaceDetection
-{
-    using Xamarin.Forms;
+using Xamarin.Forms;
 
+namespace Form
+{
     public class App : Application
     {
         public App()

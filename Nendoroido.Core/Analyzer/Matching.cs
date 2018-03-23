@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
-using System.Drawing;
-using test10.Class.FindMatch;
-
-namespace test10
+﻿namespace Nendoroido.Core.Analyzer
 {
     ///// <summary>
     ///// 圖片轉換和掃描

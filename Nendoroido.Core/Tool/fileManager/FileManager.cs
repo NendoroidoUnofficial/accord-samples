@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
+using Nendoroido.Core.Domain.Book;
 
-namespace test10.Class.fileManager
+namespace Nendoroido.Core.Tool.fileManager
 {
     [Serializable()]
     //負責管理資料的
@@ -56,11 +49,11 @@ namespace test10.Class.fileManager
 
         
         //取得書本的list
-        public static Class.Book.BookDataBase GetBookListFromFile()
+        public static BookDataBase GetBookListFromFile()
         {
 
 
-            Class.Book.BookDataBase obj = null;
+            BookDataBase obj = null;
             try
             {
                 //IFormatter formatter = new BinaryFormatter();
@@ -77,7 +70,7 @@ namespace test10.Class.fileManager
         }
 
         //儲存 BookList成檔案
-        public static bool SaveBookListToFile(Class.Book.BookDataBase bookList)
+        public static bool SaveBookListToFile(BookDataBase bookList)
         {
             try
             {

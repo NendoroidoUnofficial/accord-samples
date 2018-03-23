@@ -1,15 +1,14 @@
 ﻿// Copyright (c) 2015 Anders Gustafsson, Cureos AB.
 // All rights reserved.
 
-namespace FaceDetection.iOS
+using Form;
+using Foundation;
+using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
+
+namespace Nendoroido.iOS
 {
-    using Foundation;
-
-    using UIKit;
-
-    using Xamarin.Forms;
-    using Xamarin.Forms.Platform.iOS;
-
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
@@ -26,7 +25,7 @@ namespace FaceDetection.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Forms.Init();
-            LoadApplication(new FaceDetection.App());
+            LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
         }

@@ -1,19 +1,17 @@
 ﻿// Copyright (c) 2015 Anders Gustafsson, Cureos AB.
 // All rights reserved.
 
-namespace FaceDetection
+using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Reflection;
+using Accord.Imaging.Filters;
+using Accord.Vision.Detection;
+using Xamarin.Forms;
+
+namespace Form
 {
-    using System;
-    using System.Drawing;
-    using System.Drawing.Imaging;
-    using System.IO;
-    using System.Reflection;
-    using Accord.Imaging;
-    using Accord.Imaging.Filters;
-    using Accord.Vision.Detection;
-
-    using Xamarin.Forms;
-
     using Color = System.Drawing.Color;
     using Image = System.Drawing.Image;
 
@@ -34,7 +32,7 @@ namespace FaceDetection
             InitializeComponent();
 
             var assembly = Assembly_.GetExecutingAssembly();
-            using (var stream = assembly.GetManifestResourceStream("FaceDetection.Images.judybats.jpg"))
+            using (var stream = assembly.GetManifestResourceStream("Form.Images.judybats.jpg"))
             {
                 this.ImageView.Source = this.GetImageSourceFromStream(stream);
 
