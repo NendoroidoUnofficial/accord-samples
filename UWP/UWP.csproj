@@ -7,8 +7,8 @@
     <ProjectGuid>{D48995D0-C9E3-43FF-AFEC-DE70B3A722B8}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nendoroid.UWP</RootNamespace>
-    <AssemblyName>Nendoroid.UWP</AssemblyName>
+    <RootNamespace>Nendoroido.UWP</RootNamespace>
+    <AssemblyName>Nendoroido.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
