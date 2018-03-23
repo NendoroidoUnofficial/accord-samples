@@ -8,8 +8,8 @@
     <ProjectGuid>{5C057934-125B-4143-BD88-820C0884066D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FaceDetection</RootNamespace>
-    <AssemblyName>FaceDetection</AssemblyName>
+    <RootNamespace>Form</RootNamespace>
+    <AssemblyName>Form</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

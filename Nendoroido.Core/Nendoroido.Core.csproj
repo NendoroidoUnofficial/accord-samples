@@ -8,8 +8,8 @@
     <ProjectGuid>{71DA8C93-439B-4A0B-A23C-0C36CEDDB282}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FaceDetection</RootNamespace>
-    <AssemblyName>FaceDetection</AssemblyName>
+    <RootNamespace>Nendoroido.Core</RootNamespace>
+    <AssemblyName>Nendoroido.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
